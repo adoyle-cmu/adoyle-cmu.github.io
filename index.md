@@ -43,7 +43,7 @@ This approach reduces our time complexity to *O(users * log(items))*. This is a 
 ## How do the recommendations compare?
 To examine the accuracy of the approximated-kNN search relative to our brute-force approach, we will generate a 10000-row data set of ratings, with 1000 users and 500 movies. We will train an SVD model on this data, and compare the top-n recommendations for each user using both the brute-force and Pinecone approaches. 
 
-![Recommendation Comparison](Movie_Recommendations_Distribution_.png)\
+![Recommendation Comparison](Movie_Recommendations_Distribution_.png)
 
 In above figure, we can see how many times each movie was placed in a user's top-20 recommended movies for both the brute-force and Pinecone approaches. We see that while the two approaches are not identical, they are very similar. The Pinecone approach is a good approximation of the brute-force approach, and it is a scalable solution for large datasets.
 
