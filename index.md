@@ -16,7 +16,7 @@ for each user:
 for each user:
     sort the predicted ratings and return the top-n items
 ```
-This approach is not scalable. It has a time complexity of *O(users*items)*. In our toy-scenario for CMU's Machine Learning in Production class, we have a dataset of 1,000,000 users and 27,000 movies, which would require 27 billion iterations to compute the top-n predictions for each user. On the course VM with 2 CPUs and 12GM of RAM, this time complexity is far too large for regular model retraining. 
+This approach is not scalable. It has a time complexity of *O(users * items)*. In our toy-scenario for CMU's Machine Learning in Production class, we have a dataset of 1,000,000 users and 27,000 movies, which would require 27 billion iterations to compute the top-n predictions for each user. On the course VM with 2 CPUs and 12GM of RAM, this time complexity is far too large for regular model retraining. 
 
 ## The Alternative: Vector Databases
 Vector databases are a modern solution to efficiently store and query high-dimensional vectors. They are designed to handle large-scale vector data, such as embeddings or feature vectors, and provide fast and accurate similarity search capabilities. Unlike traditional relational databases or key-value stores, vector databases are optimized for similarity-based operations, allowing users to find vectors that are most similar to a given query vector. These databases leverage advanced indexing techniques, such as approximate nearest neighbor (ANN) search algorithms, to achieve high-performance search operations. By utilizing vector databases, developers can easily build recommendation systems, content-based search engines, and other applications that rely on similarity matching.
