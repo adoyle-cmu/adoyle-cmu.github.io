@@ -1,4 +1,3 @@
-<script src="https://rawcdn.githack.com/oscarmorrison/md-page/master/md-page.js"></script><noscript>
 
 # Using Pinecone.io to scale SVD for a Movie Recommendation System
 
