@@ -24,7 +24,7 @@ Vector databases are a modern solution to efficiently store and query high-dimen
 ## Pinecone.io
 [Pinecone](https://pinecone.io)  is a commerically available vector database platfrom that supports serverless deployments- all you need to do to create a vector store is sign up and retrieve your API Key! Like many Vector databases, Pinecone uses approximate nearest neighbor search to efficiently retrieve the most similar vectors to a given query. How can this be used to collect the top-n recommendations for each user?
 
-Pincone provides a python API that allows you to create a vector index, and insert vectors into it. When the index is created, you are required to specify a distance metric. This is because Pinecone uses an efficient approximation of kNN to retrieve our top-n recommendations. Once the index is created, you can query it with a given vector, and the query will return the top-n most similar vectors to the query vector.
+Pinecone provides a python API that allows you to create a vector index, and insert vectors into it. When the index is created, you are required to specify a distance metric. This is because Pinecone uses an efficient approximation of kNN to retrieve our top-n recommendations. Once the index is created, you can query it with a given vector, and the query will return the top-n most similar vectors to the query vector.
 
 Pinecone allows for the creation of an index with the `dotproduct` distance metric- which specifies that the more positive the dot product between two vectors, the more similar they are. This is exactly what we need to retrieve the top-n recommendations for each user.
 
