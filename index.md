@@ -26,7 +26,7 @@ Pinecone is a commerically available vector database platfrom that supports serv
 
 Pincone provides a python API that allows you to create a vector index, and insert vectors into it. When the index is created, you are required to specify a distance metric. This is because Pinecone uses an efficient approximation of kNN to retrieve our top-n recommendations. Once the index is created, you can query it with a given vector, and the query will return the top-n most similar vectors to the query vector.
 
-Pinecone allows for the creation of an index with the `dotproduct` distance metric- which specifies that the more positive the dot product between two vectors, the more similar they are. This is exactly what we need to retrieve the top-n recommendations for each user.
+[Pinecone] (https://pinecone.io) allows for the creation of an index with the `dotproduct` distance metric- which specifies that the more positive the dot product between two vectors, the more similar they are. This is exactly what we need to retrieve the top-n recommendations for each user.
 
 Our new approach will look like this:
 
